@@ -1,0 +1,173 @@
+/* ----- Body & Background ----- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('images/pharmacy-bg.jpg') no-repeat center center fixed; /* Your downloaded image */
+  background-size: cover;
+  color: #fff; /* text color for readability */
+}
+
+/* Optional overlay for better readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+  z-index: -1;
+}
+
+/* ----- Headings ----- */
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+h2 {
+  margin-top: 20px;
+  color: #1a73e8;
+}
+
+/* ----- Sections ----- */
+.form-section, .table-section, .summary-section {
+  margin: 20px auto 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ----- Login / Signup Sections ----- */
+#login-section, #signup-section {
+  max-width: 400px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  margin: 50px auto;
+}
+
+#login-section h2, #signup-section h2 {
+  text-align: center;
+  color: #1a73e8;
+}
+
+#login-section p, #signup-section p {
+  text-align: center;
+  color: #fff;
+}
+
+#login-section button, #signup-section button {
+  width: auto;
+  padding: 8px 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+/* ----- Inputs & Buttons ----- */
+input, select, button {
+  margin: 5px 5px 10px 0;
+  padding: 8px;
+  width: 180px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #155ab6;
+}
+
+/* ----- Tables ----- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: rgba(233, 236, 239, 0.8);
+  color: #333;
+}
+
+.low-stock {
+  background-color: rgba(248, 215, 218, 0.7);
+}
+
+.near-expiry {
+  background-color: rgba(255, 243, 205, 0.7);
+}
+
+/* ----- Summary Section ----- */
+.summary-section p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ----- Responsive: Mobile Screens ----- */
+@media (max-width: 768px) {
+  input, select, button {
+    width: 100%; /* Inputs/buttons fill container on mobile */
+  }
+
+  .form-section, .table-section, .summary-section, #login-section, #signup-section {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  table, th, td {
+    font-size: 12px; /* Smaller text for small screens */
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-section, .table-section, .summary-section, #login-section, #signup-section {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  input, select, button {
+    padding: 6px;
+  }
+
+  table, th, td {
+    font-size: 11px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
