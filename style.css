@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url('images/pharmacy-bg.jpg') no-repeat center center fixed; /* Your downloaded image */
+  background: url('pharmacy-bg.jpg') no-repeat center center fixed; /* Your downloaded image */
   background-size: cover;
   color: #fff; /* text color for readability */
 }
